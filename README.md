@@ -1,40 +1,50 @@
-# Simple Voting System
+Design and implementation of a simple voting system
+Submitted by:
+Name: Aremu Oluwasemilore Mikhail
+Matric number: 24/14071
+Department: Computer Science
+1. Planning / Requirement Analysis
+•	Problem Identified: Manual voting is slow and error-prone.
+•	Requirements:
+o	The system must allow voters to select a candidate.
+o	Count votes automatically.
+o	Display the total votes and the winner.
+o	Prevent invalid inputs.
+•	Objective: To create a simple voting system using Python that is easy to use and accurate.
 
-candidate1 = 0
-candidate2 = 0
-candidate3 = 0
+2. System Design
+•	Input: Candidate number selected by voter
+•	Process:
+o	Display candidates
+o	Accept and validate input
+o	Count votes
+•	Output:
+o	Total votes per candidate
+o	Winner of the election
 
-print("Welcome to the Simple Voting System")
-print("1. Candidate A")
-print("2. Candidate B")
-print("3. Candidate C")
+3. Implementation (Coding)
+•	Python Code: (Paste your voting system Python code here)
+•	Explanation: Comment each part of your code in your own words
 
-while True:
-    vote = input("Enter candidate number (1-3): ")
+4. Testing
+•	Test Cases:
+1.	Input valid candidate numbers → vote counts should increase correctly
+2.	Input invalid numbers → system should display “Invalid vote”
+3.	Multiple voters → system should allow repeated voting until stopped
+•	Expected Result:
+o	Correct counting of votes
+o	Accurate winner displayed
+o	No crashes on invalid input
 
-    if vote == "1":
-        candidate1 += 1
-    elif vote == "2":
-        candidate2 += 1
-    elif vote == "3":
-        candidate3 += 1
-    else:
-        print("Invalid vote")
+5. Deployment / Maintenance
+•	Deployment: System runs on Python IDE (IDLE, VS Code, PyCharm)
+•	Maintenance:
+o	Adding more candidates
+o	Changing voting rules
+o	Improving interface (optional GUI in future)
 
-    cont = input("Another voter? (yes/no): ").lower()
-    if cont != "yes":
-        break
+6. Conclusion
+•	The SDLC approach ensured the project is well-structured
+•	The Simple Voting System meets the objectives: easy to use, counts votes correctly, and displays results
 
-print("\nVoting Results")
-print("Candidate A:", candidate1)
-print("Candidate B:", candidate2)
-print("Candidate C:", candidate3)
-
-if candidate1 > candidate2 and candidate1 > candidate3:
-    print("Winner: Candidate A")
-elif candidate2 > candidate1 and candidate2 > candidate3:
-    print("Winner: Candidate B")
-elif candidate3 > candidate1 and candidate3 > candidate2:
-    print("Winner: Candidate C")
-else:
-    print("It's a tie")
+   
