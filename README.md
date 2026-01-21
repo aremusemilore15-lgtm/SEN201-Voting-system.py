@@ -46,5 +46,6 @@ o	Improving interface (optional GUI in future)
 6. Conclusion
 •	The SDLC approach ensured the project is well-structured
 •	The Simple Voting System meets the objectives: easy to use, counts votes correctly, and displays results
+Link to the repository
+https://github.com/aremusemilore15-lgtm/SEN201-Voting-system.py.git
 
-   
